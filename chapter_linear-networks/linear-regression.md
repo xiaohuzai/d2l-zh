@@ -71,11 +71,14 @@ $$\hat{y} = w_1  x_1 + ... + w_d  x_d + b.$$
 $$\hat{y} = \mathbf{w}^\top \mathbf{x} + b.$$
 :eqlabel:`eq_linreg-y`
 
+**注意：上面 $\mathbf{x}$是将各个维度feature纵向排的，即$\mathbf{x}$是个列向量，每一列是个样本，每一行是个特征**
+
 在 :eqref:`eq_linreg-y`中，
 向量$\mathbf{x}$对应于单个数据样本的特征。
 用符号表示的矩阵$\mathbf{X} \in \mathbb{R}^{n \times d}$
 可以很方便地引用我们整个数据集的$n$个样本。
-其中，$\mathbf{X}$的每一行是一个样本，每一列是一种特征。
+
+**其中，$\mathbf{X}$的每一行是一个样本，每一列是一种特征。**
 
 对于特征集合$\mathbf{X}$，预测值$\hat{\mathbf{y}} \in \mathbb{R}^n$
 可以通过矩阵-向量乘法表示为：
